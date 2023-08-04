@@ -1,0 +1,37 @@
+----Usar função dia_semana----
+
+Ler(ano)
+if ano < 1600:
+	print(Ano incorreto.)
+
+Ler(mês)
+elif 12 < mes or mes < 1:
+	print(Mês incorreto)
+
+elif mes==4 or mes == 6 or mes == 9 or mes == 11:
+	last_day = 30
+
+elif mes == 2:
+	bissexto = (ano % 400 == 0) or ( (ano % 4 == 0) and not(ano % 100 == 0) ) 
+	if bissexto = True:
+		last_day = 29
+	else:
+		last_day = 28
+
+else:
+	last_day = 31
+
+ler(dia)
+if last_day < day or day < 1:
+	print(dia incorreto)
+
+dia_semana()
+
+print("\nData : "dia, "/", mes, "/", ano, "-Dia da semana: ", dia_semana)
+print("\n Calendário : Mês ", mes, "-Ano ", ano)
+print("\n Dom  Seg  Ter  Qua  Quin  Sex  Sáb")
+
+
+
+
+
